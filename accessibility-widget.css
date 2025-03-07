@@ -1,0 +1,108 @@
+:root {
+    --bg-color: #021401;
+    --second-bg-color: #032401;
+    --text-color: #ededed;
+    --main-color: #0e9a05;
+  }
+
+/* Accessibility Widget Styles */
+.accessibility-widget {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    border-radius: 15px;
+    z-index: 1000;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    cursor: move;
+}
+
+.accessibility-toggle {
+    background: var(--main-color);
+    color: #000;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+}
+
+.accessibility-toggle:hover {
+    transform: scale(1.1);
+}
+
+.widget-content {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.accessibility-btn {
+    background: var(--main-color);
+    color: var(--bg-color);
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.accessibility-btn:hover {
+    background: var(--text-color);
+    transform: scale(1.05);
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-color);
+}
+
+/* High Contrast Mode */
+.high-contrast {
+    background: black !important;
+    color: yellow !important;
+}
+
+/* Dyslexia Font */
+.dyslexia-font {
+    font-family: 'OpenDyslexic', Arial, sans-serif !important;
+}
+
+/* Themes */
+.dark-theme {
+    background: black;
+    color: white;
+}
+
+.light-theme {
+    background: white;
+    color: black;
+}
+
+.sepia-theme {
+    background: #f4ecd8;
+    color: #704214;
+}
+
+/* Grayscale */
+.grayscale {
+    filter: grayscale(100%);
+}
